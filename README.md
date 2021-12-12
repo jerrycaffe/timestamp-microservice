@@ -2,7 +2,11 @@
 Freecodecamp microservice using java springboot
 Clone the repo and run offline
 
-http://localhost:8080/api/timestamps //returns the current date
+http://localhost:8080/api/timestamps //returns the current date 
+{
+  "unix": 1639285967037,
+  "utc": "Sun, 12 Dec 2021 05:12:47 GMT"
+}
 
 
 
