@@ -26,3 +26,12 @@ http://localhost:8080/api/timestamps/2021-08-100
   "status": 500,
   "message": "Internal Server error"
 }
+
+
+# whoAmI - Microservice
+This endpoint returns json message as follows
+A request to http://localhost:8080/api/whoaim returns the object with {
+    "language": "en_NG",
+    "software": "PostmanRuntime/7.28.4",
+    "ipaddress": "127.0.0.1"
+}
