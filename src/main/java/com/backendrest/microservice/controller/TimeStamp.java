@@ -1,5 +1,7 @@
 package com.backendrest.microservice.controller;
 
+import com.backendrest.microservice.exception.ApiException;
+import com.backendrest.microservice.exception.ApiExceptionHandler;
 import com.backendrest.microservice.model.CheckTime;
 import com.backendrest.microservice.model.ErrorResponse;
 import com.backendrest.microservice.services.CheckTimeService;
@@ -10,11 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
+import java.time.ZonedDateTime;
 
 import static java.util.Objects.requireNonNull;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1/")
 public class TimeStamp {
 
 

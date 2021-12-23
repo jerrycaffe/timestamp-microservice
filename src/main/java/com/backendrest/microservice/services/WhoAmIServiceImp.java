@@ -1,9 +1,11 @@
 package com.backendrest.microservice.services;
 
 import com.backendrest.microservice.model.WhoAmI;
+import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 
+@Service
 public class WhoAmIServiceImp implements WhoAmIService{
     private String language;
     private String software;
